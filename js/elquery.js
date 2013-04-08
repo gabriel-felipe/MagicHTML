@@ -27,6 +27,7 @@
 					if(self.C_Operators[operator](value,limit)){
 						obj.addClass(operator+"_"+cssp+"_"+limit)
 					} else {
+						obj.removeClass(operator+"_"+cssp+"_"+limit)
 						console.log("Falha")
 					}
 				} else {
@@ -39,7 +40,13 @@
 	}
     this.each(function() {
     	helpers.add($(this),exp);
-    })
+    });
+    var objs = this;
+    $(window).bind('resize',function(){
+    	objs.each(function() {
+    		helpers.add($(this),exp);
+    	});
+    });
 
   };
 })( jQuery );

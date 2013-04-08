@@ -1,1 +1,1 @@
-[["#teste","is width 380"],["#teste","min width 300"]]
+[["#teste","is width 380"],["#teste","min width 500"]]

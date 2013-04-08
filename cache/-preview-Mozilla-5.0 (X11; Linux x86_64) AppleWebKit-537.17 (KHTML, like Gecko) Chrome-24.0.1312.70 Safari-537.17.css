@@ -1,1 +1,1 @@
-#teste {  width: 380px;  margin: 40px;}#teste.is_width_380 {  background: blue;  border: 3px solid black;}#teste.min_width_300 p {  border-bottom: 3px solid black;  font-size: 23px;}
+#teste {  width: 100%;  margin: 40px;}#teste.is_width_380 {  background: blue;  border: 3px solid black;}#teste.min_width_500 p {  border-bottom: 3px solid black;  font-size: 23px;}

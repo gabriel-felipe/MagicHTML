@@ -1,6 +1,6 @@
-#teste {width: 380px; margin:40px;}
+#teste {width: 100%; margin:40px;}
 
 #teste@eq(is width 380) {background: blue; border:3px solid black;}
-#teste@eq(min width 300) p{border-bottom: 3px solid black; font-size:23px;}
+#teste@eq(min width 500) p{border-bottom: 3px solid black; font-size:23px;}
 
 

@@ -1,5 +1,6 @@
 MagicHTML
 =========
+<h1>Objective</h1>
 
 An new way to write html / css, using php to parse and compile css first, building dynamic javascript codes, allowing you to code really faster.
 
