@@ -1,5 +1,7 @@
 MagicHTML
 =========
+<p>This is yet under development, so it will probably have some bugs. But it's a lot of fun already!</p>
+<p>Some live <a href='http://gabrielfelipe.com/MagicHTML/test.php' target='_blank'>preview </a>
 <h2>What it does?</h2>
 MagicHTML is a php class for html handling.
 <p>You can set metas, title and w/e. The idea is you have an OO html. </p>
