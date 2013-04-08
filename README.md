@@ -1,6 +1,19 @@
 MagicHTML
 =========
-<h1>Objective</h1>
+<h1>What it does?</h1>
+MagicHTML is a php class for html handling.
+You can set metas, title and w/e. The idea is you have an OO html. 
+<h2>Example of use:</h2>
+<code>
+require_once("MagicHTML.php");
+$html = new MagicHTML;
+$html->add_css_linked("preview.css");
+$content = file_get_contents("elquery-test.html");
+$html->set_content($content);
+echo $html->create();
+</code>
+
+
 
 An new way to write html / css, using php to parse and compile css first, building dynamic javascript codes, allowing you to code really faster.
 
