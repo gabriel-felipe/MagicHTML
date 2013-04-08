@@ -217,7 +217,7 @@ use phpbrowscap\Browscap;
 							$expression = str_replace(" ","_",strtolower($match[2]));
 							$element = $match[1];
 							$css[$l] = str_replace($match[0],"$element.$expression",$css[$l]);
-							$equery[] = [$element,$match[2]];
+							$equery[] = array($element,$match[2]);
 						}
 						if(preg_match("/^[\s]*if(.+):$/",$rule,$match)){
 							$css[$l] = str_replace($match[0], "<?php if(".$match[1].") { ?>",$rule);	
