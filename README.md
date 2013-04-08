@@ -15,7 +15,7 @@ echo $html->create(); <br />
 
 
 <h2> Ok, but why? </h2>
-<a href='#funpart'>Check the fun part</a>
+<p>Check the fun part</p>
 <h3> CSS </h3>
 <p>It's boring and bad for us to write all our project css into one big file. But it's usual worse for the server to handle multiples requests of tiny little css. </p>
 
