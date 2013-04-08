@@ -5,12 +5,12 @@ MagicHTML is a php class for html handling.
 You can set metas, title and w/e. The idea is you have an OO html. 
 <h2>Example of use:</h2>
 <code>
-require_once("MagicHTML.php");
-$html = new MagicHTML;
-$html->add_css_linked("preview.css");
-$content = file_get_contents("elquery-test.html");
-$html->set_content($content);
-echo $html->create();
+require_once("MagicHTML.php"); <br />
+$html = new MagicHTML; <br />
+$html->add_css_linked("preview.css"); <br />
+$content = file_get_contents("elquery-test.html"); <br />
+$html->set_content($content);  <br />
+echo $html->create(); <br />
 </code>
 
 
