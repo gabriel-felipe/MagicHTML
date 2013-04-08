@@ -3,6 +3,6 @@
 #teste.min_width_290 p{border-bottom: 3px solid black; font-size:34px;}
 
 /*#teste@eq(is width 380) {background: blue;}*/
-if $browser == "Chrome":
-	#teste {background: red;}
-end
+<?php if( $browser == "Chrome") { ?>
+#teste {background: red;}
+<?php } ?>
