@@ -1,8 +1,6 @@
 #teste {width: 380px; margin:40px;}
-#teste.is_width_380 {background: blue;}
-#teste.min_width_290 p{border-bottom: 3px solid black; font-size:34px;}
 
-/*#teste@eq(is width 380) {background: blue;}*/
-if $browser == "Chrome":
-	#teste {background: red;}
-end
+#teste@eq(is width 380) {background: blue; border:3px solid black;}
+#teste@eq(min width 300) p{border-bottom: 3px solid black; font-size:23px;}
+
+

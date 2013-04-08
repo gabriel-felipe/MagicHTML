@@ -34,7 +34,7 @@ use phpbrowscap\Browscap;
 		protected $path_cache = "";
 		protected $base_css = "/MagicHTML/css";
 		protected $path_css = "";
-
+		protected $base_js = "/MagicHTML/js";
 
 
 
@@ -119,8 +119,8 @@ use phpbrowscap\Browscap;
 
 			}
 		}
-		public function add_js_inline($name,$script){
-			$this->js_inline[$name] = $script;
+		public function add_js_inline($script){
+			$this->js_inline[] = $script;
 		}
 
 		//funções para gerenciamento de metainformações
@@ -202,7 +202,7 @@ use phpbrowscap\Browscap;
 				$version = $this->browser->Version;
 				$MajorVer = $this->browser->MajorVer;
 				$MinorVer = $this->browser->MinorVer;
-
+				$equery = array();
 				foreach($css_all as $link => $css){
 					if($css['is_local']){
 						$file = $this->path_css."/".$link;
@@ -211,8 +211,16 @@ use phpbrowscap\Browscap;
 						$file = $link;
 					}
 					$css = file($file);
+
 					foreach($css as $l=>$rule){
 						$css[$l] = str_replace("css_path",$this->base_css,$rule);
+
+						if(preg_match("/([^\s]+)@eq\(([^)]+)\)/",$rule,$match)){
+							$expression = str_replace(" ","_",strtolower($match[2]));
+							$element = $match[1];
+							$css[$l] = str_replace($match[0],"$element.$expression",$css[$l]);
+							$equery[] = [$element,$match[2]];
+						}
 						if(preg_match("/^[\s]*if(.+):$/",$rule,$match)){
 							$css[$l] = str_replace($match[0], "<?php if(".$match[1].") { ?>",$rule);	
 						}
@@ -247,6 +255,12 @@ use phpbrowscap\Browscap;
 				$content = str_replace("\n","",$content);
 				fwrite($cssFinal, $content);
 				fclose($cssFinal);
+				if(count($equery) > 0){
+					$arquivo = $this->path_cache."/equery.js";
+					$equeryFile = fopen($arquivo,"w+");
+					fwrite($equeryFile, json_encode($equery));
+					fclose($equeryFile);
+				}
 			}
 			return array("all"=>"<link rel='stylesheet' type='text/css' href='".$this->base_cache."/$name' media='all' />");
 			} else {
@@ -270,7 +284,7 @@ $obj { $style }";
 		}
 
 		public function get_js_links($pos=false){
-			global $path_js;
+			
 			$js_links = array();
 			$js_all = $this->js_linked;
 			if($pos){
@@ -282,13 +296,20 @@ $obj { $style }";
 				}
 			}
 			foreach($js_all as $link => $js){
-				$path = ($js["is_local"]) ? $path_js."/".$link : $link;
+				$path = ($js["is_local"]) ? $this->base_js."/".$link : $link;
 				$js_link = "<script src=\"$path\"></script>";				
 				$js_links[$link] = $js_link;
 			}
 			return $js_links;
 		}
 		public function get_js_inline(){
+			$arquivo = $this->path_cache."/equery.js";
+			$equery = file_get_contents($arquivo);
+			$equery = json_decode($equery);
+			foreach($equery as $query){
+				$this->add_js_inline(
+					"$(\"{$query[0]}\").equery(\"$query[1]\");");
+			}
 			$html = '
 <script name="js-inline">
 			$(document).ready(function(){
@@ -369,8 +390,9 @@ EOD;
 	    
 	    public function create(){
 	    	$this->print_errors();
+	    	$head = $this->get_head();
 	    	$body = $this->get_body();
-	    	$html = $this->doctype."\n<html lang=\"{$this->html_lang}\">\n".$this->get_head()."\n".$body."\n</html>";
+	    	$html = $this->doctype."\n<html lang=\"{$this->html_lang}\">\n".$head."\n".$body."\n</html>";
 	    	return $html;
 
 	    }
