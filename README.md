@@ -10,11 +10,8 @@ if $browser == 'IE' and $version <= 8:
   #header {width: 930px;}
   all css here
 end
-- Element Querys (Not even close to ready yet)
+- Element Querys (Basic functions working)
 
 There's a lot of cool stuf, i'll write it here latter, when things be a little bit more done.
 
-- Check elquery-test.html and css/preview.css to see the idea. 
-
-TODO
-PHP compiler, so we can write with the right syntax direct into css and php makes de js part.
+- Check test.php and css/preview.css to see the idea. 
