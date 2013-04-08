@@ -1,0 +1,3 @@
+#teste {width: 380px; margin:40px;}
+#teste.is_width_380 {background: blue;}
+#teste.min_width_290 {border-bottom: 3px solid black;}
