@@ -11,7 +11,8 @@ if $browser == 'IE' and $version <= 8:
   #header {width: 930px;}
   all css here
 end
-- Element Querys (Basic functions working)
+- Element Querys (Basic functions working) - The idea to implement this came after reading this post:
+http://ianstormtaylor.com/media-queries-are-a-hack/
 
 There's a lot of cool stuf, i'll write it here latter, when things be a little bit more done.
 
