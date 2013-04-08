@@ -67,12 +67,10 @@ use phpbrowscap\Browscap;
 			if(!is_dir($this->path_css)){
 				die("Check path_css variable");
 			}
-			
-
+			$this->add_js_linked("jquery-1.9.1.js");
+			$this->add_js_linked("elquery.js");
 			$browser = new Browscap($this->path_cache);
-
 			$this->browser = $browser->getBrowser();
-
 			unset($browser);
 		}
 		//Funções gerenciamento de links de css
