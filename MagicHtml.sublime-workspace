@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"equery",
+				"equeryFile"
+			],
+			[
+				"php",
+				"phpbrowscap"
+			],
+			[
+				"pro",
+				"propriedade"
+			],
+			[
+				"comp",
+				"comparativeProperties"
+			],
+			[
 				"pre",
 				"preco_grupo"
 			],
@@ -190,10 +206,6 @@
 			[
 				"max-",
 				"max-height"
-			],
-			[
-				"pro",
-				"produtosHtml"
 			],
 			[
 				"produt",
@@ -502,28 +514,48 @@
 			[
 				"before",
 				"before_update"
-			],
-			[
-				"bef",
-				"before_new"
-			],
-			[
-				"pay",
-				"paymentRequest"
-			],
-			[
-				"bffd",
-				"bffdbmanager"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"contents": "",
+			"file": "test.php",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 335,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/elquery.js",
+			"settings":
+			{
+				"buffer_size": 1307,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "MagicHTML.php",
+			"settings":
+			{
+				"buffer_size": 11325,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/preview.css",
+			"settings":
+			{
+				"buffer_size": 179,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "elquery-test.html",
+			"settings":
+			{
+				"buffer_size": 687,
 				"line_ending": "Unix"
 			}
 		}
@@ -576,6 +608,13 @@
 	},
 	"file_history":
 	[
+		"/home/gabriel/Insync/MagicHTML/README.md",
+		"/home/gabriel/Insync/MagicHTML/sftp-config.json",
+		"/home/gabriel/Insync/MagicHTML/cache/s",
+		"/home/gabriel/Insync/MagicHTML/lessc.php",
+		"/home/gabriel/Insync/MagicHTML/php_browscap.ini",
+		"/home/gabriel/Insync/MagicHTML/MagicHTML.php",
+		"/home/gabriel/Insync/MagicHTML/phpbrowscap.php",
 		"/home/gabriel/Insync/gabriel@webingpro.com.br/WebingPro/Clientes/Diviege/Desenvolvimento/admin/helpers/crudController.php",
 		"/home/gabriel/Insync/gabriel@webingpro.com.br/WebingPro/Clientes/Diviege/Desenvolvimento/admin/controller/clientes/groupCrud.php",
 		"/home/gabriel/Insync/gabriel@webingpro.com.br/WebingPro/Clientes/Diviege/Desenvolvimento/admin/controller/clientes/groups.php",
@@ -696,14 +735,7 @@
 		"/home/gabriel/Insync/gabriel@webingpro.com.br/WebingPro/Clientes/Soul Hype/Novo_Dev/controller/common/footer.php",
 		"/home/gabriel/Insync/gabriel@webingpro.com.br/WebingPro/Clientes/Soul Hype/bkup/ImagEngine.xml",
 		"/home/gabriel/Insync/gabriel@webingpro.com.br/WebingPro/Clientes/Soul Hype/System/library/image.php",
-		"/home/gabriel/Downloads/opencart_v1.5.4.1/upload/system/library/image.php",
-		"/home/gabriel/Downloads/opencart_v1.5.4.1/upload/catalog/model/tool/image.php",
-		"/home/gabriel/Insync/gabriel@webingpro.com.br/WebingPro/Clientes/Soul Hype/admin/controller/common/header.php",
-		"/home/gabriel/Insync/gabriel@webingpro.com.br/WebingPro/Clientes/Soul Hype/Novo_Dev/controller/account/login.php",
-		"/home/gabriel/Insync/gabriel@webingpro.com.br/WebingPro/Clientes/Soul Hype/admin/view/javascript/common.js",
-		"/home/gabriel/Insync/gabriel@webingpro.com.br/WebingPro/Clientes/Soul Hype/admin/view/template/common/header.tpl",
-		"/home/gabriel/Insync/gabriel@webingpro.com.br/WebingPro/Clientes/Soul Hype/admin/view/template/common/home.tpl",
-		"/home/gabriel/Insync/gabriel@webingpro.com.br/WebingPro/Clientes/Soul Hype/Novo_Dev/controller/account/account.php"
+		"/home/gabriel/Downloads/opencart_v1.5.4.1/upload/system/library/image.php"
 	],
 	"find":
 	{
@@ -729,6 +761,23 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"[\\n]+",
+			"\\n",
+			">",
+			"<",
+			"html",
+			"path_library",
+			"path_libra",
+			"path_li",
+			"path_libr",
+			"path_lib",
+			"css",
+			"path_css",
+			"363",
+			"piece",
+			"C_N",
+			"comparative",
+			"name",
 			"save",
 			"$obj",
 			"obj",
@@ -839,31 +888,16 @@
 			"visible",
 			"troca",
 			"trocaimg",
-			"troca",
-			"get",
-			"ger",
-			"gabriel@webingpro.com.br",
-			"visible",
-			"hide(0);",
-			"show(0)",
-			"show",
-			"trocaimg",
-			"trocaimg(",
-			"trocaimg",
-			"troca",
-			"trocaImg",
-			"espaco",
-			"popupImage",
-			"popup",
-			"popupImage",
-			"script"
+			"troca"
 		],
 		"highlight": false,
-		"in_selection": false,
+		"in_selection": true,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
+			"<br />\\n",
+			"<br />",
 			"path_template",
 			"define(\"$1\",$2);",
 			"define($1,\"$2\");",
@@ -960,29 +994,148 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "test.php",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 335,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								5,
+								5
 							]
 						],
 						"settings":
 						{
-							"auto_name": "",
 							"incomplete_sync": null,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/elquery.js",
+					"settings":
+					{
+						"buffer_size": 1307,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								838,
+								838
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "MagicHTML.php",
+					"settings":
+					{
+						"buffer_size": 11325,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1966,
+								1966
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 137.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/preview.css",
+					"settings":
+					{
+						"buffer_size": 179,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								34,
+								34
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "elquery-test.html",
+					"settings":
+					{
+						"buffer_size": 687,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								409,
+								409
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1056,7 +1209,7 @@
 		[
 			[
 				"",
-				"/home/gabriel/Insync/gabriel@webingpro.com.br/WebingPro/Orçamentos/orcamentos.sublime-project"
+				"/home/gabriel/Insync/gabriel@webingpro.com.br/WebingPro/Clientes/Diviege/diviege_site.sublime-project"
 			]
 		],
 		"width": 380.0

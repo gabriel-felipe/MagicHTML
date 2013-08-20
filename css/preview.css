@@ -2,5 +2,3 @@
 
 #teste@eq(is width 380) {background: blue; border:3px solid black;}
 #teste@eq(min width 500) p{border-bottom: 3px solid black; font-size:23px;}
-
-

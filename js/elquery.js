@@ -50,4 +50,5 @@
 
   };
 })( jQuery );
+$("p").equery("min width")
 
